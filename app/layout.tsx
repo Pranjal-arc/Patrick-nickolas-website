@@ -7,6 +7,7 @@ import CustomCursor from '@/components/CustomCursor';
 import ScrollToTop from '@/components/ScrollToTop';
 import Loader from '@/components/Loader';
 import Chatbot from '@/components/Chatbot';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -46,6 +47,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <ScrollToTop />
         <Chatbot />
+        <SpeedInsights />
       </body>
     </html>
   );
